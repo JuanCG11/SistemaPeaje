@@ -66,4 +66,8 @@ public class Peaje {
         totalRecaudado += valor;
         return valor;
     }
+    public void registrarPasoVehiculo(Vehiculo vehiculo) {
+        vehiculosPasados.add(vehiculo);
+    }
+
 }
