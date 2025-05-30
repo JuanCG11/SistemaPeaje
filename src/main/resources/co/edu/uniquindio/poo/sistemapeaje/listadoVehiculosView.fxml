@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="co.edu.uniquindio.poo.sistemapeaje.viewController.ListadoVehiculosViewController">
+    <top>
+        <Label text="Listado de Vehículos" style="-fx-font-size: 20px; -fx-padding: 15px;" BorderPane.alignment="CENTER" />
+    </top>
+    <center>
+        <TableView fx:id="tablaVehiculos">
+            <columns>
+                <TableColumn fx:id="colPlaca" text="Placa" />
+                <TableColumn fx:id="colTipo" text="Tipo" />
+                <TableColumn fx:id="colPeajes" text="# Peajes Pagados" />
+                <TableColumn fx:id="colDescripcion" text="Descripción" />
+                <TableColumn fx:id="colValorPagado" text="Valor Total Pagado" />
+            </columns>
+        </TableView>
+    </center>
+</BorderPane>

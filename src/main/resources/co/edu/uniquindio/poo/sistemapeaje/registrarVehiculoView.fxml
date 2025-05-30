@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<?import javafx.collections.FXCollections?>
+<?import com.sun.org.apache.xpath.internal.operations.String?>
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="co.edu.uniquindio.poo.sistemapeaje.viewController.RegistrarVehiculoViewController">
+    <top>
+        <Label text="Registrar Paso de Vehículo" style="-fx-font-size: 20px; -fx-padding: 15px;" BorderPane.alignment="CENTER" />
+    </top>
+    <center>
+        <VBox spacing="10" padding="20">
+            <HBox spacing="10">
+                <Label text="Tipo de Vehículo:" />
+                <ComboBox fx:id="comboTipoVehiculo">
+                    <items>
+                        <FXCollections fx:factory="observableArrayList">
+                            <String fx:value="Carro" />
+                            <String fx:value="Moto" />
+                            <String fx:value="Camion" />
+                        </FXCollections>
+                    </items>
+                </ComboBox>
+            </HBox>
+            <HBox spacing="10">
+                <Label text="Placa:" />
+                <TextField fx:id="txtPlaca" />
+            </HBox>
+            <HBox spacing="10">
+                <Label text="Nro de Ejes (Camion):" />
+                <TextField fx:id="txtEjes" />
+            </HBox>
+            <HBox spacing="10">
+                <Label text="Capacidad de carga (ton):" />
+                <TextField fx:id="txtCarga" />
+            </HBox>
+            <HBox spacing="10">
+                <Label text="Cilindraje (Moto):" />
+                <TextField fx:id="txtCilindraje" />
+            </HBox>
+            <HBox spacing="10">
+                <Label text="Electrico (Carro):" />
+                <CheckBox fx:id="checkElectrico" />
+                <Label text="Servicio Publico:" />
+                <CheckBox fx:id="checkServicioPublico" />
+            </HBox>
+            <HBox spacing="10">
+                <Label text="Documento del Conductor:" />
+                <TextField fx:id="txtDocumentoConductor" />
+            </HBox>
+            <Button text="Registrar Paso" fx:id="btnRegistrarPaso" />
+        </VBox>
+    </center>
+</BorderPane>
+

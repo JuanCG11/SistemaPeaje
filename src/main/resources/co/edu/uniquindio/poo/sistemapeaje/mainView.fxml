@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="co.edu.uniquindio.poo.sistemapeaje.viewController.MainViewController">
+    <top>
+        <Label text="Sistema de Peaje" style="-fx-font-size: 24px; -fx-padding: 20px; -fx-alignment: center;" BorderPane.alignment="CENTER" />
+    </top>
+    <center>
+        <VBox spacing="15" alignment="CENTER">
+            <Button text="Registrar paso de vehículo" fx:id="btnRegistrarVehiculo" />
+            <Button text="Ver listado de vehículos" fx:id="btnListadoVehiculos" />
+            <Button text="Consultar recaudador" fx:id="btnConsultarRecaudador" />
+            <Button text="Ver reportes generales" fx:id="btnReportesGenerales" />
+        </VBox>
+    </center>
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20" />
+    </padding>
+</BorderPane>

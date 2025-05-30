@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" spacing="15" alignment="CENTER" style="-fx-padding: 20;" fx:controller="co.edu.uniquindio.poo.sistemapeaje.viewController.ReportesGeneralesViewController">
+    <Label text="Reportes Generales" style="-fx-font-size: 20px;" />
+
+    <HBox spacing="10">
+        <Button fx:id="btnConductoresCamionesPesados" text="Conductores con camiones > 10t" />
+        <Button fx:id="btnTotalRecaudado" text="Total recaudado por estación" />
+        <Button fx:id="btnVehiculosPorTipo" text="Vehículos por tipo" />
+    </HBox>
+
+    <TextArea fx:id="txtReporte" editable="false" prefWidth="500" prefHeight="300" wrapText="true" />
+</VBox>
