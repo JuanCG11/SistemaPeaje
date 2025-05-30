@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?xml version="1.0" encoding="UTF-8"?>
+
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox xmlns:fx="http://javafx.com/fxml" spacing="15" alignment="CENTER" style="-fx-padding: 20;" fx:controller="co.edu.uniquindio.poo.sistemapeaje.viewController.ConsultarRecaudadorViewController">
+<?import javafx.geometry.Insets?>
+<VBox xmlns:fx="http://javafx.com/fxml" spacing="15" alignment="CENTER" fx:controller="co.edu.uniquindio.poo.sistemapeaje.viewController.ConsultarRecaudadorViewController">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
     <Label text="Consultar Recaudador" style="-fx-font-size: 20px;" />
     <TextField fx:id="txtNombreCompleto" promptText="Nombre completo del recaudador" prefWidth="300" />
     <Button fx:id="btnBuscar" text="Buscar" />

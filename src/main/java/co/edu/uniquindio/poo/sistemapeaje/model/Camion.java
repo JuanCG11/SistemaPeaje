@@ -39,6 +39,7 @@ public class Camion extends Vehiculo {
         return TipoVehiculo.CAMION;
     }
 
+
     public double getCapacidadCarga() {
         return capacidadCarga;
     }

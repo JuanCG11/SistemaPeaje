@@ -26,50 +26,50 @@ public class MainViewController {
 
     private void abrirVentanaRegistrarVehiculo() {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/co/edu/uniquindio/poo/sistemapeaje/RegistrarVehiculoView.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/co/edu/uniquindio/poo/sistemapeaje/registrarVehiculoView.fxml"));
             Parent root = loader.load();
             Stage stage = new Stage();
             stage.setTitle("Registrar Paso de Vehículo");
             stage.setScene(new Scene(root));
             stage.show();
         } catch (Exception e) {
-            System.err.println("Error al abrir la ventana: " + e.getMessage());
+            e.printStackTrace();
         }
     }
     private void abrirVentanaListadoVehiculos() {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/co/edu/uniquindio/poo/sistemapeaje/ListadoVehiculosView.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/co/edu/uniquindio/poo/sistemapeaje/listadoVehiculosView.fxml"));
             Parent root = loader.load();
             Stage stage = new Stage();
             stage.setTitle("Listado de Vehículos");
             stage.setScene(new Scene(root));
             stage.show();
         } catch (Exception e) {
-            System.err.println("Error al abrir la ventana: " + e.getMessage());
+            e.printStackTrace();
         }
     }
     private void abrirVentanaConsultarRecaudador() {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/co/edu/uniquindio/poo/sistemapeaje/ConsultarRecaudadorView.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/co/edu/uniquindio/poo/sistemapeaje/consultarRecaudadorView.fxml"));
             Parent root = loader.load();
             Stage stage = new Stage();
             stage.setTitle("Consultar Recaudador");
             stage.setScene(new Scene(root));
             stage.show();
         } catch (Exception e) {
-            System.err.println("Error al abrir la ventana: " + e.getMessage());
+            e.printStackTrace();
         }
     }
     private void abrirVentanaReportesGenerales() {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/co/edu/uniquindio/poo/sistemapeaje/ReportesGeneralesView.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/co/edu/uniquindio/poo/sistemapeaje/reportesGeneralesView.fxml"));
             Parent root = loader.load();
             Stage stage = new Stage();
             stage.setTitle("Reportes Generales");
             stage.setScene(new Scene(root));
             stage.show();
         } catch (Exception e) {
-            System.err.println("Error al abrir la ventana: " + e.getMessage());
+            e.printStackTrace();
         }
     }
 

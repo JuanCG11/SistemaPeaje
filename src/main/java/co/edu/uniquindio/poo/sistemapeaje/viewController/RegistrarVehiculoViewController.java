@@ -19,6 +19,7 @@ public class RegistrarVehiculoViewController {
         btnRegistrarPaso.setOnAction(event -> registrarPaso());
     }
 
+
     private void registrarPaso() {
         String tipo = comboTipoVehiculo.getValue();
         String placa = txtPlaca.getText();

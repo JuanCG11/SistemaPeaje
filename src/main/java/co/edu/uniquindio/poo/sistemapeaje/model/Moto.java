@@ -32,4 +32,5 @@ public class Moto extends Vehiculo {
     public TipoVehiculo getTipo() {
         return TipoVehiculo.MOTO;
     }
+
 }
